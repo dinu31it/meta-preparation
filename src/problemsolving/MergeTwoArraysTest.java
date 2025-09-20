@@ -10,6 +10,8 @@ public class MergeTwoArraysTest {
     }
 
     public static int[] mergedArrays(int[] a, int[] b){
+        if(a == null || b == null)
+            return new int[0];
         int i=0, j=0, k=0;
         int[] c = new int[a.length+b.length];
         while(i<a.length){
